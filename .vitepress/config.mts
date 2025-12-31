@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "./",
-  srcDir: "./docs",
+  base: "/vitepress_docs/",
+  srcDir: "docs",
 
   title: "二狗摸鱼",
   description: "A VitePress Site",
