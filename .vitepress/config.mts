@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/vitepress_docs/",
+  base: "/",
   srcDir: "docs",
 
   title: "二狗摸鱼",
