@@ -7,6 +7,11 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    # 👇 关键：显式授予写权限
+    permissions:
+      contents: write  # 允许 push 到 gh-pages
+      pages: write     # 如果用官方 Pages 部署也需要（可选）
+      id-token: write  # 如果用 OIDC 也需要（这里不需要）
     steps:
       - uses: actions/checkout@v4
         with:
