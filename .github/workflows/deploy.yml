@@ -19,7 +19,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci || npm install
+        run: npm ci
         # 解释：如果存在 package-lock.json 用 npm ci（更快更可靠）
         # 如果没有，则 fallback 到 npm install
 
