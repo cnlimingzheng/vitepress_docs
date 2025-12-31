@@ -28,7 +28,7 @@ jobs:
 
       # 可选：调试输出目录
       - name: Debug build output
-        run: ls -la ./vitepress_docs/.vitepress/dist
+        run: ls -la ./.vitepress/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
