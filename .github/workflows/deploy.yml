@@ -10,24 +10,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 获取完整历史（可选）
+          fetch-depth: 1
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
           cache: pnpm
+
       - name: Install pnpm
         run: npm install -g pnpm
 
       - name: Install dependencies
+        working-directory: ./vitepress_docs
         run: pnpm install
 
       - name: Build VitePress site
+        working-directory: ./vitepress_docs
         run: npm run docs:build
+
+      # 可选：调试输出目录
+      - name: Debug build output
+        run: ls -la ./vitepress_docs/.vitepress/dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./vitepress_docs/.vitepress/dist
+          publish_dir: ./.vitepress/dist
