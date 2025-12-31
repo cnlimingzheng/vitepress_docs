@@ -24,7 +24,6 @@ jobs:
         # 如果没有，则 fallback 到 npm install
 
       - name: Build VitePress site
-        working-directory: ./vitepress_docs
         run: npm run docs:build
 
       # 可选：调试输出目录
