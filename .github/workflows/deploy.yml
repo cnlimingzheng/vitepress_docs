@@ -16,19 +16,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: pnpm
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8
-
-      - name: Check pnpm version
-        run: pnpm --version
+          cache: npm
 
       - name: Install dependencies
-        working-directory: ./vitepress_docs
-        run: pnpm install
+        run: npm ci || npm install
+        # 解释：如果存在 package-lock.json 用 npm ci（更快更可靠）
+        # 如果没有，则 fallback 到 npm install
 
       - name: Build VitePress site
         working-directory: ./vitepress_docs
