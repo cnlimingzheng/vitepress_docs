@@ -19,9 +19,7 @@ export default defineConfig({
         text: "Examples",
         items: [
           { text: "首页", link: "/" },
-          { text: "1-算法基础概念", link: "/js数据结构与算法/1-算法基础概念" },
-          { text: "工作计划", link: "/ergou-plans" },
-          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "前端面试题", link: "/interview-questions" },
           { text: "Runtime API Examples", link: "/api-examples" },
         ],
       },

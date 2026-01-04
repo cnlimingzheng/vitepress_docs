@@ -8,20 +8,17 @@ hero:
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: 工作计划
-      link: /ergou-plans
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 面试题
+      link: /interview-questions
     - theme: alt
       text: API Examples
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 学习记录
+    details: 记录学习、成长
+  - title: 项目分享
+    details: 分享一些实现、有趣、有用的项目
+  - title: 其它
+    details: 一些其他东西，还没想好
 ---
