@@ -10,9 +10,12 @@ hero:
     - theme: brand
       text: 面试题
       link: /interview-questions
+    - theme: brand
+      text: 最佳实践
+      link: /code-practice/practical-experience
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 代码片段
+      link: /code-practice/code-snippets
 
 features:
   - title: 学习记录

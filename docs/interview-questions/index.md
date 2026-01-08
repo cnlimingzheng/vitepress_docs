@@ -14,3 +14,5 @@
 
 [React](./react.md)
 
+[算法](./algorithm.md)
+
