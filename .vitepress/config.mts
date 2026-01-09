@@ -5,12 +5,15 @@ export default defineConfig({
   base: "/vitepress_docs/",
   srcDir: "docs",
 
-  lang: 'zh-CN',
+  lang: "zh-CN",
   title: "二狗摸鱼",
   description: "A VitePress Site",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [{ text: "首页", link: "/" }],
+    nav: [
+      { text: "首页", link: "/" },
+      { text: "高项", link: "/ITPMP" },
+    ],
 
     sidebar: [
       // {
